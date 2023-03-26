@@ -18,24 +18,42 @@ namespace DadosParaGeraçãoDeArquivos
             InitializeComponent();
         }
 
-        private void btnCriarLinhas_Click(object sender, EventArgs e)
+       private void btnCriarLinhas_Click(object sender, EventArgs e)
         {
             DataTable table = new DataTable();
-            int numeroFuncionarios = Convert.ToInt32(txtNFuncionarios.Text);
-
             table.Columns.Add("Nome", typeof(string));
-            table.Columns.Add("Salário",typeof
+            table.Columns.Add("Salário", typeof
                 (int));
+            int numeroFuncionarios;
 
-            for (int i = 0; i < numeroFuncionarios; i++)
+            if (int.TryParse(txtNFuncionarios.Text, out numeroFuncionarios))
             {
-                DataRow row = table.NewRow();
-                table.Rows.Add(row);
+               if(numeroFuncionarios > 0)
+                {
+                    for (int i = 0; i < numeroFuncionarios; i++)
+                    {
+                        DataRow row = table.NewRow();
+                        table.Rows.Add(row);
+                    }
+                    dataGridView1.DataSource = table;
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid number for the number of employees.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
             }
-            dataGridView1.DataSource = table;
-
-
-        }
+            else if (string.IsNullOrEmpty(txtNFuncionarios.Text))
+            {
+               
+                MessageBox.Show("Please enter a value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+               
+                MessageBox.Show("Please enter a valid integer.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         private void txtNFuncionarios_TextChanged(object sender, EventArgs e)
         {
