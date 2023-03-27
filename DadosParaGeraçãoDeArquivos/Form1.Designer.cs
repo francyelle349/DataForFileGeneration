@@ -126,6 +126,7 @@
             this.BtnReiniciar.TabIndex = 1;
             this.BtnReiniciar.Text = "Reiniciar";
             this.BtnReiniciar.UseVisualStyleBackColor = false;
+            this.BtnReiniciar.Click += new System.EventHandler(this.BtnReiniciar_Click_1);
             // 
             // Form1
             // 

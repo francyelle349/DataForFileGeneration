@@ -9,3 +9,14 @@ C:\Users\franc\source\repos\DadosParaGeraçãoDeArquivos\DadosParaGeraçãoDeArq
 C:\Users\franc\source\repos\DadosParaGeraçãoDeArquivos\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.csproj.CoreCompileInputs.cache
 C:\Users\franc\source\repos\DadosParaGeraçãoDeArquivos\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.exe
 C:\Users\franc\source\repos\DadosParaGeraçãoDeArquivos\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.pdb
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.csproj.AssemblyReference.cache
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.csproj.SuggestedBindingRedirects.cache
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.Form1.resources
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.Properties.Resources.resources
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.csproj.GenerateResource.cache
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.csproj.CoreCompileInputs.cache
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.exe
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\obj\Debug\DadosParaGeraçãoDeArquivos.pdb
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\bin\Debug\DadosParaGeraçãoDeArquivos.exe.config
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\bin\Debug\DadosParaGeraçãoDeArquivos.exe
+C:\Users\franc\OneDrive\Área de Trabalho\DadosParaGeraçãoDeArquivosGit\DadosParaGeraçãoDeArquivos\bin\Debug\DadosParaGeraçãoDeArquivos.pdb

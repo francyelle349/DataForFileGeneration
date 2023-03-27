@@ -19,21 +19,21 @@ namespace DadosParaGeraçãoDeArquivos
             InitializeComponent();
         }
 
-       private void btnCriarLinhas_Click(object sender, EventArgs e)
+        private void btnCriarLinhas_Click(object sender, EventArgs e)
         {
-            
-           if (table.Columns.Count == 0)
-                {
-                    table.Columns.Add("Nome", typeof(string));
-                    table.Columns.Add("Salário", typeof
-                        (int));
-                }
-                (int));
+
+            if (table.Columns.Count == 0)
+            {
+                table.Columns.Add("Nome", typeof(string));
+                table.Columns.Add("Salário", typeof
+                    (int));
+            }
+        
             int numeroFuncionarios;
 
             if (int.TryParse(txtNFuncionarios.Text, out numeroFuncionarios))
             {
-               if(numeroFuncionarios > 0 && table.Columns.Count == 2)
+                if (numeroFuncionarios > 0 && table.Columns.Count == 2)
                 {
                     for (int i = 0; i < numeroFuncionarios; i++)
                     {
@@ -51,26 +51,26 @@ namespace DadosParaGeraçãoDeArquivos
             }
             else if (string.IsNullOrEmpty(txtNFuncionarios.Text))
             {
-               
+
                 MessageBox.Show("Please enter a value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-               
+
                 MessageBox.Show("Please enter a valid integer.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-        private void txtNFuncionarios_TextChanged(object sender, EventArgs e)
-        {
-
         }
+            private void txtNFuncionarios_TextChanged(object sender, EventArgs e)
+            {
 
-        private void btnCriarArquivo_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Title = "Salvar arquivo";
-            saveFileDialog.Filter = "Arquivo de Texto (*.txt)|*.txt";
-            saveFileDialog.FileName = "minhaTabela.txt";
+            }
+
+            private void btnCriarArquivo_Click(object sender, EventArgs e)
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Title = "Salvar arquivo";
+                saveFileDialog.Filter = "Arquivo de Texto (*.txt)|*.txt";
+                saveFileDialog.FileName = "minhaTabela.txt";
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -85,9 +85,17 @@ namespace DadosParaGeraçãoDeArquivos
                         }
                         writer.WriteLine(line.TrimEnd('\t'));
                     }
-                    
+
                 }
-         private void BtnReiniciar_Click(object sender, EventArgs e)
+
+
+
+            }
+
+            }
+     
+
+        private void BtnReiniciar_Click_1(object sender, EventArgs e)
         {
             table.Rows.Clear();
             txtNFuncionarios.Text = string.Empty;
@@ -96,8 +104,8 @@ namespace DadosParaGeraçãoDeArquivos
             BtnReiniciar.Enabled = false;
             btnCriarLinhas.Enabled = true;
             BtnReiniciar.Enabled = true;
-        }
-            }
+
         }
     }
+
 }
