@@ -13,6 +13,7 @@ namespace DadosParaGeraçãoDeArquivos
 {
     public partial class Form1 : Form
     {
+        DataTable table = new DataTable();
         public Form1()
         {
             InitializeComponent();
@@ -20,15 +21,19 @@ namespace DadosParaGeraçãoDeArquivos
 
        private void btnCriarLinhas_Click(object sender, EventArgs e)
         {
-            DataTable table = new DataTable();
-            table.Columns.Add("Nome", typeof(string));
-            table.Columns.Add("Salário", typeof
+            
+           if (table.Columns.Count == 0)
+                {
+                    table.Columns.Add("Nome", typeof(string));
+                    table.Columns.Add("Salário", typeof
+                        (int));
+                }
                 (int));
             int numeroFuncionarios;
 
             if (int.TryParse(txtNFuncionarios.Text, out numeroFuncionarios))
             {
-               if(numeroFuncionarios > 0)
+               if(numeroFuncionarios > 0 && table.Columns.Count == 2)
                 {
                     for (int i = 0; i < numeroFuncionarios; i++)
                     {
@@ -80,7 +85,18 @@ namespace DadosParaGeraçãoDeArquivos
                         }
                         writer.WriteLine(line.TrimEnd('\t'));
                     }
+                    
                 }
+         private void BtnReiniciar_Click(object sender, EventArgs e)
+        {
+            table.Rows.Clear();
+            txtNFuncionarios.Text = string.Empty;
+            txtNFuncionarios.Enabled = true;
+            btnCriarArquivo.Enabled = false;
+            BtnReiniciar.Enabled = false;
+            btnCriarLinhas.Enabled = true;
+            BtnReiniciar.Enabled = true;
+        }
             }
         }
     }
